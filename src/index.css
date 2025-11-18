@@ -15,10 +15,17 @@
   html {
     font-family: var(--font-sans);
     font-feature-settings: "rlig" 1, "calt" 1;
+    background-color: #000; /* ensure ultra dark base */
   }
 
   body {
     @apply antialiased;
+    color: rgba(255,255,255,0.92);
+  }
+
+  /* Prefer sharp mono for terminal aesthetics */
+  .font-mono {
+    font-family: 'Roboto Mono', 'Source Code Pro', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
 }
 
